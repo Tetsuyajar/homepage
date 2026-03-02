@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Micro+5&family=Tiny5&display=swap');
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: "Tiny5", sans-serif;
+
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-image: url(assets/bg/bg4.png);
+    overflow: hidden;
+    
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background: #ff6347;
+    perspective: 1000px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: rotateY(15deg) rotateX(15deg);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#rtext {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+#rbox {
+    box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    border: gray;
+    transform: scale(1);
+    transition: ease-in 0.1s;
+}
+img:hover{
+    transform: scale(1.3);
+}
